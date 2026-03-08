@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampurna Sit — Software Developer & AI/ML Enthusiast</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     INTRO OVERLAY — full-screen welcome
+═══════════════════════════════════════ -->
+<div id="intro-overlay">
+
+  <!-- LEFT — dark decorative panel -->
+  <div class="intro-left">
+    <div class="intro-blob ib1"></div>
+    <div class="intro-blob ib2"></div>
+    <div class="intro-blob ib3"></div>
+    <div class="intro-ring ir1"></div>
+    <div class="intro-ring ir2"></div>
+    <div class="intro-ring ir3"></div>
+
+    <div class="intro-av-big">
+      <img class="iav-img" id="ppImg" src="MYSELF.jpg" alt="Sampurna" style="display:block;">
+    </div>
+
+    <div class="intro-left-title">Sampurna<br><em>Sit</em></div>
+    <div class="intro-left-sub">Software Developer · AI/ML Enthusiast · RCCIIT</div>
+
+    <div class="dots-grid">
+      <div class="dg-dot"></div><div class="dg-dot"></div><div class="dg-dot"></div>
+      <div class="dg-dot"></div><div class="dg-dot"></div><div class="dg-dot"></div>
+      <div class="dg-dot"></div><div class="dg-dot"></div><div class="dg-dot"></div>
+      <div class="dg-dot"></div><div class="dg-dot"></div><div class="dg-dot"></div>
+      <div class="dg-dot"></div><div class="dg-dot"></div><div class="dg-dot"></div>
+      <div class="dg-dot"></div><div class="dg-dot"></div><div class="dg-dot"></div>
+    </div>
+    <div class="intro-scroll-line"></div>
+  </div>
+
+  <!-- RIGHT — welcome content -->
+  <div class="intro-right">
+    <div class="int-tag"><span class="int-tag-dot"></span>Portfolio</div>
+    <div class="int-welcome">Welcome, I'm</div>
+    <div class="int-name">Sampurna <em>Sit</em></div>
+    <div class="int-role">Software Developer &nbsp;·&nbsp; AI/ML Enthusiast &nbsp;·&nbsp; B.Tech CSE · RCCIIT</div>
+    <div class="int-hr"></div>
+    <div class="int-type-wrap">
+      <span id="typeText"></span><span class="int-type-cursor"></span>
+    </div>
+    <div class="int-pills">
+      <span class="int-pill"><span class="int-pill-icon">🧠</span>DSA specialist</span>
+      <span class="int-pill"><span class="int-pill-icon">🤖</span>AI/ML enthusiast</span>
+      <span class="int-pill"><span class="int-pill-icon">⚡</span>Java / Python</span>
+      <span class="int-pill"><span class="int-pill-icon">🌐</span>Full Stack Basics</span>
+    </div>
+    <div class="int-cta-row">
+      <button class="int-cta" id="enterBtn">Enter Portfolio <span class="int-arr">→</span></button>
+      <button class="int-skip" id="skipBtn">skip intro</button>
+    </div>
+    <div class="int-code-line">// const sampurna = { role: "frontend-dev", vibe: "aesthetic", status: "hiring" };</div>
+  </div>
+
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<!-- Toast -->
+<div id="toast"></div>
+<!-- Floating petals background -->
+<div class="petals-bg" id="petalsBg"></div>
+
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════ -->
+<nav>
+  <div class="nav-logo">Sampurna <span>Sit</span></div>
+  <div class="nav-links">
+    <a href="#landing"   onclick="smoothTo('landing');return false;">Home</a>
+    <a href="#comp-sec"  onclick="smoothTo('comp-sec');return false;">Portfolio</a>
+    <a href="#skills-sec" onclick="smoothTo('skills-sec');return false;">Skills</a>
+    <a href="#contact-sec" onclick="smoothTo('contact-sec');return false;">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     LANDING HERO
+═══════════════════════════════════════ -->
+<section id="landing">
+
+  <!-- floating code decorations -->
+  <span class="cf" style="top:14%;left:1.5%;animation-duration:10s">&lt;div className="dream"&gt;</span>
+  <span class="cf" style="top:72%;left:1%;animation-duration:13s;animation-delay:3s">const passion = "frontend";</span>
+  <span class="cf" style="top:22%;right:.5%;animation-duration:11s;animation-delay:1.5s">border-radius: 🌸;</span>
+  <span class="cf" style="top:82%;right:1%;animation-duration:14s;animation-delay:5s">return &lt;Beautiful /&gt;;</span>
+  <span class="cf" style="top:45%;left:.5%;animation-duration:9s;animation-delay:2s">useState("sampurna")</span>
+
+  <!-- Left: hero text -->
+  <div class="land-left">
+    <div class="l-eye"><span class="e-dot"></span>Seeking Software Developer Internships</div>
+    <h1 class="l-title">I solve<br><span class="ti">complex</span><br>problems with code.</h1>
+    <p class="l-desc">
+      Software Developer & AI/ML enthusiast focused on Data Structures, Algorithms, and building intelligent systems. 
+      Passionate about engineering clean code and solving real-world challenges with Python, Java, and C++.
+      Pursuing B.Tech CSE at RCC Institute of Information Technology, Kolkata.
+    </p>
+    <div class="l-badges">
+      <span class="badge">Data Structures</span>
+      <span class="badge">Algorithms</span>
+      <span class="badge">Python</span>
+      <span class="badge">Java</span>
+      <span class="badge">AI/ML</span>
+      <span class="badge">React.js</span>
+    </div>
+    <div class="l-btns">
+      <a href="#comp-sec"  class="btn-p" onclick="smoothTo('comp-sec');return false;">View Portfolio →</a>
+      <a href="#contact-sec" class="btn-o" onclick="smoothTo('contact-sec');return false;">Hire Me</a>
+    </div>
+    <div class="l-stats">
+      <div><div class="sn">100+</div><div class="sl">LeetCode Solved</div></div>
+      <div><div class="sn">0</div><div class="sl">Internships (Fresher)</div></div>
+      <div><div class="sn">∞</div><div class="sl">Logic and Designs</div></div>
+    </div>
+  </div>
+
+  <!-- Right: profile card -->
+  <div class="land-right">
+    <div class="pcard">
+      <div class="ppwrap">
+        <img class="ppimg" id="landImg" src="MYSELF.jpg" alt="Sampurna Sit" style="display:block;">
+      </div>
+      <div class="pc-name">Sampurna Sit</div>
+      <div class="pc-role">Frontend Developer · RCCIIT</div>
+      <div class="pc-div"></div>
+      <div class="pc-info">
+        <div class="pc-row"><span class="ri">📍</span><span class="rv">Kolkata, West Bengal, India</span></div>
+        <div class="pc-row"><span class="ri">🎓</span><span class="rv">B.Tech CSE · RCCIIT</span></div>
+        <div class="pc-row"><span class="ri">🧩</span><span class="rv">DSA · Java · Python · C++</span></div>
+        <div class="pc-row"><span class="ri">🤖</span><span class="rv">AI / ML · Neural Networks</span></div>
+      </div>
+      <div class="pc-socials">
+        <a href="https://github.com/sampurnasit" target="_blank" rel="noopener" class="spill">GitHub</a>
+        <a href="https://www.linkedin.com/in/sampurna-sit/" target="_blank" rel="noopener" class="spill">LinkedIn</a>
+        <a href="Resume.pdf" target="_blank" class="spill">Resume</a>
+      </div>
+    </div>
+    <div class="avail"><span class="av-dot"></span>Open to Internships</div>
+  </div>
+
+  <div class="s-hint">
+    <span class="s-hint-t">scroll down</span>
+    <div class="s-line"></div>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     COMPUTER / PORTFOLIO SECTION
+═══════════════════════════════════════ -->
+<div id="comp-sec">
+  <div class="comp-hd reveal">
+    <div class="cl">✦ My Portfolio — Interactive</div>
+    <h2>Explore inside the <em>screen</em></h2>
+    <p>Click the tabs to navigate my story, skills &amp; projects</p>
+  </div>
+
+  <div class="cw reveal">
+    <div class="monitor">
+
+      <!-- browser chrome -->
+      <div class="mtop">
+        <div class="dot dr"></div>
+        <div class="dot dy"></div>
+        <div class="dot dg"></div>
+        <div class="abar">
+          <span class="aico">🔒</span>
+          <span class="atxt">sampurna.dev/portfolio</span>
+        </div>
+      </div>
+
+      <!-- screen -->
+      <div class="mscreen">
+
+        <!-- tabs -->
+        <div class="stabs">
+          <div class="stab active"  onclick="switchTab('ab-panel', this)">about.jsx</div>
+          <div class="stab"         onclick="switchTab('sk-panel', this)">skills.json</div>
+          <div class="stab"         onclick="switchTab('pr-panel', this)">projects.md</div>
+          <div class="stab"         onclick="switchTab('ct-panel', this)">contact.ts</div>
+        </div>
+
+        <div class="scont">
+
+          <!-- ── ABOUT ── -->
+          <div class="spanel active" id="ab-panel">
+            <div class="ab-panel">
+
+              <div class="ab-left">
+                <div class="ab-greet">// system.out.println("Hello"); 💻</div>
+                <div class="ab-head">Building <em>intelligent</em><br>software solutions.</div>
+                <p class="ab-body">
+                  I'm Sampurna — a B.Tech CSE student at RCCIIT, Kolkata. 
+                  Though I have a strong foundation in modern web technologies, my heart lies in core software engineering, 
+                  algorithmic thinking, and AI/ML. I love diving deep into complex logic and optimizing performance.
+                </p>
+                <div class="ab-chips">
+                  <span class="chip">DSA</span>
+                  <span class="chip">AI/ML</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">Java</span>
+                  <span class="chip">Problem Solving</span>
+                  <span class="chip">Core Engineering</span>
+                </div>
+                <div class="ab-meta">
+                  <div class="ab-mi"><strong>📍 Location</strong>Kolkata, West Bengal</div>
+                  <div class="ab-mi"><strong>🎓 Institute</strong>RCCIIT · B.Tech CSE</div>
+                  <div class="ab-mi"><strong>💼 Status</strong>Seeking 1st Internship</div>
+                  <div class="ab-mi"><strong>🌐 Languages</strong>English · Bengali · Hindi</div>
+                </div>
+              </div>
+
+              <div class="ab-right">
+                <!-- stats -->
+                <div class="ab-widget">
+                  <div class="ab-wtit">// quick stats</div>
+                  <div class="ab-stat-row">
+                    <div class="ab-stat"><div class="ab-snum">100+</div><div class="ab-slbl">Problems</div></div>
+                    <div class="ab-stat"><div class="ab-snum">10+</div><div class="ab-slbl">Projects</div></div>
+                    <div class="ab-stat"><div class="ab-snum">Fresher</div><div class="ab-slbl">Status</div></div>
+                    <div class="ab-stat"><div class="ab-snum">∞</div><div class="ab-slbl">Logic & Designs</div></div>
+                  </div>
+                </div>
+                <!-- skill bars -->
+                <div class="ab-widget">
+                  <div class="ab-wtit">// top skills</div>
+                  <div class="ab-bar-wrap">
+                    <div class="ab-brow"><span class="ab-bname">DSA (Java/C++)</span><div class="ab-btrack"><div class="ab-bfill" style="width:92%"></div></div><span class="ab-bpct">92%</span></div>
+                    <div class="ab-brow"><span class="ab-bname">Python / AI</span><div class="ab-btrack"><div class="ab-bfill" style="width:85%"></div></div><span class="ab-bpct">85%</span></div>
+                    <div class="ab-brow"><span class="ab-bname">Java Core</span><div class="ab-btrack"><div class="ab-bfill" style="width:88%"></div></div><span class="ab-bpct">88%</span></div>
+                    <div class="ab-brow"><span class="ab-bname">React / JS</span><div class="ab-btrack"><div class="ab-bfill" style="width:80%"></div></div><span class="ab-bpct">80%</span></div>
+                    <div class="ab-brow"><span class="ab-bname">SQL / Backend</span><div class="ab-btrack"><div class="ab-bfill" style="width:75%"></div></div><span class="ab-bpct">75%</span></div>
+                  </div>
+                </div>
+                <!-- toolbox -->
+                <div class="ab-widget">
+                  <div class="ab-wtit">// toolbox</div>
+                  <div class="ab-tags-wrap">
+                    <span class="ab-tag">DSA</span><span class="ab-tag">Python</span><span class="ab-tag">Java</span>
+                    <span class="ab-tag">TensorFlow</span><span class="ab-tag">Scikit-learn</span><span class="ab-tag">C++</span>
+                    <span class="ab-tag">React</span><span class="ab-tag">SQL</span><span class="ab-tag">Git</span>
+                    <span class="ab-tag">Node.js</span><span class="ab-tag">Pandas</span><span class="ab-tag">NumPy</span>
+                  </div>
+                </div>
+                <div class="ab-quote">"Efficiency in code, intelligence in design."</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ── SKILLS ── -->
+          <div class="spanel" id="sk-panel">
+            <div class="skgrid">
+              <div class="skcard">
+                <div class="skcat">// Core Languages</div>
+                <div class="sklist"><span class="sktag">HTML5</span><span class="sktag">CSS3</span><span class="sktag">JavaScript</span><span class="sktag">TypeScript</span></div>
+                <div class="skbw">
+                  <div class="skbrow"><span class="skbn">Java / C++</span><div class="skbt"><div class="skbf" style="width:92%"></div></div><span class="skbp">92%</span></div>
+                  <div class="skbrow"><span class="skbn">Python</span><div class="skbt"><div class="skbf" style="width:88%"></div></div><span class="skbp">88%</span></div>
+                  <div class="skbrow"><span class="skbn">SQL / DB</span><div class="skbt"><div class="skbf" style="width:78%"></div></div><span class="skbp">78%</span></div>
+                </div>
+              </div>
+              <div class="skcard">
+                <div class="skcat">// Frameworks &amp; Libraries</div>
+                <div class="sklist"><span class="sktag">React.js</span><span class="sktag">Next.js</span><span class="sktag">Tailwind</span><span class="sktag">GSAP</span></div>
+                <div class="skbw">
+                  <div class="skbrow"><span class="skbn">Scikit-learn</span><div class="skbt"><div class="skbf" style="width:82%"></div></div><span class="skbp">82%</span></div>
+                  <div class="skbrow"><span class="skbn">TensorFlow</span><div class="skbt"><div class="skbf" style="width:75%"></div></div><span class="skbp">75%</span></div>
+                  <div class="skbrow"><span class="skbn">Pandas/NumPy</span><div class="skbt"><div class="skbf" style="width:85%"></div></div><span class="skbp">85%</span></div>
+                </div>
+              </div>
+              <div class="skcard">
+                <div class="skcat">// Design &amp; Tools</div>
+                <div class="sklist"><span class="sktag">Figma</span><span class="sktag">Git</span><span class="sktag">GitHub</span><span class="sktag">VS Code</span></div>
+                <div class="skbw">
+                  <div class="skbrow"><span class="skbn">VS Code</span><div class="skbt"><div class="skbf" style="width:90%"></div></div><span class="skbp">90%</span></div>
+                  <div class="skbrow"><span class="skbn">Git / Lab</span><div class="skbt"><div class="skbf" style="width:85%"></div></div><span class="skbp">85%</span></div>
+                </div>
+              </div>
+              <div class="skcard">
+                <div class="skcat">// Backend Basics</div>
+                <div class="sklist"><span class="sktag">Node.js</span><span class="sktag">Express</span><span class="sktag">Python</span><span class="sktag">SQL</span></div>
+                <div class="skbw">
+                  <div class="skbrow"><span class="skbn">React / JS</span><div class="skbt"><div class="skbf" style="width:82%"></div></div><span class="skbp">82%</span></div>
+                  <div class="skbrow"><span class="skbn">Node.js</span><div class="skbt"><div class="skbf" style="width:70%"></div></div><span class="skbp">70%</span></div>
+                  <div class="skbrow"><span class="skbn">CSS Magic</span><div class="skbt"><div class="skbf" style="width:85%"></div></div><span class="skbp">85%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── PROJECTS ── -->
+          <div class="spanel" id="pr-panel">
+            <div class="prlist">
+              <div class="pritem">
+                <div class="prnum">01</div>
+                <div style="flex:1">
+                  <div class="prtit">Attend-Ease AI — Smart Attendance System</div>
+                  <div class="prdesc">AI-powered portal for managing academic attendance with intelligent tracking and a clean verification flow.</div>
+                  <div class="prtags"><span class="prtag">Next.js</span><span class="prtag">AI Integration</span><span class="prtag">Vercel</span></div>
+                  <div style="margin-top:6px"><a href="https://attend-ease-ai.vercel.app/login" target="_blank" rel="noopener" class="pr-link">View Project →</a></div>
+                </div>
+              </div>
+              <div class="pritem">
+                <div class="prnum">02</div>
+                <div style="flex:1">
+                  <div class="prtit">Personal Savings Manager — Finance Tracker</div>
+                  <div class="prdesc">A beautiful, interactive dashboard to manage personal finances, track savings, and visualize spending habits.</div>
+                  <div class="prtags"><span class="prtag">React.js</span><span class="prtag">Chart.js</span><span class="prtag">Aesthetic UI</span></div>
+                  <div style="margin-top:6px"><a href="https://sampurnasit.github.io/Personal_savings_manager/" target="_blank" rel="noopener" class="pr-link">View Project →</a></div>
+                </div>
+              </div>
+              <div class="pritem">
+                <div class="prnum">03</div>
+                <div style="flex:1">
+                  <div class="prtit">Tic-Tac-Toe — Interactive Game</div>
+                  <div class="prdesc">A polished, responsive Tic-Tac-Toe game with smooth animations and smart win-logic built with modern web tech.</div>
+                  <div class="prtags"><span class="prtag">HTML5</span><span class="prtag">CSS3</span><span class="prtag">JavaScript</span></div>
+                  <div style="margin-top:6px"><a href="https://sampurnasit.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener" class="pr-link">View Project →</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── CONTACT ── -->
+          <div class="spanel" id="ct-panel">
+            <div class="ct-wrap">
+              <div class="ct-left">
+                <div class="ct-icon">🌸</div>
+                <div class="ct-head">Let's build something <em>beautiful</em> together</div>
+                <p class="ct-sub">I'm looking for internship opportunities. Whether a project, collab, or just a hello — my inbox is open!</p>
+                <div class="ct-links">
+                  <a class="ctbtn cp" href="mailto:sampurnasit.cse.2@gmail.com">✉ Send Email</a>
+                  <a class="ctbtn co" href="https://github.com/sampurnasit" target="_blank" rel="noopener">⬡ GitHub</a>
+                  <a class="ctbtn co" href="https://www.linkedin.com/in/sampurna-sit/" target="_blank" rel="noopener">in LinkedIn</a>
+                </div>
+              </div>
+              <div class="ct-right">
+                <div class="ct-card"><div class="ct-card-label">Email</div><div class="ct-card-val">sampurnasit.cse.2@gmail.com</div></div>
+                <div class="ct-card"><div class="ct-card-label">Phone</div><div class="ct-card-val">+91 7439495015</div></div>
+                <div class="ct-card"><div class="ct-card-label">Location</div><div class="ct-card-val">Kolkata, West Bengal, India</div></div>
+                <div class="ct-card"><div class="ct-card-label">Institute</div><div class="ct-card-val">RCCIIT · B.Tech CSE · 2nd Year</div></div>
+                <div class="ct-card">
+                  <div class="ct-card-label">Status</div>
+                  <div class="ct-card-val">
+                    <div class="ct-avail"><span class="ct-av-dot"></span>Open to Internships</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end .scont -->
+
+        <!-- status bar -->
+        <div class="sbar">
+          <span><span class="sdot"></span>Ready</span>
+          <span>✦ React 18.2</span>
+          <span>UTF-8</span>
+          <span>Ln 1, Col 1</span>
+          <span style="margin-left:auto">🌸 sampurna.dev</span>
+        </div>
+
+      </div><!-- end .mscreen -->
+    </div><!-- end .monitor -->
+
+    <!-- stand -->
+    <div class="mneck"></div>
+    <div class="mbase"></div>
+
+    <!-- keyboard + mouse -->
+    <div class="kbwrap">
+      <div class="keyboard">
+        <div class="kr"><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k w"></div></div>
+        <div class="kr"><div class="k w"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k w"></div></div>
+        <div class="kr"><div class="k ww"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k"></div><div class="k ww"></div></div>
+        <div class="kr"><div class="k sp"></div></div>
+      </div>
+      <div style="display:flex;align-items:flex-end;justify-content:center;width:100%;">
+        <div class="mouse"></div>
+      </div>
+    </div>
+
+  </div><!-- end .cw -->
+</div><!-- end #comp-sec -->
+
+
+<!-- ═══════════════════════════════════════
+     SKILLS SECTION
+═══════════════════════════════════════ -->
+<section class="osec reveal" id="skills-sec">
+  <div class="oslbl">✦ What I bring</div>
+  <h2 class="ostit">Crafting with <em>code</em> &amp; creativity</h2>
+  <div class="skogrid">
+    <div class="skocard"><div class="sko-i">🧠</div><div class="sko-n">DSA & Problem Solving</div><div class="sko-d">Expertise in Data Structures and Algorithms with a focus on optimization and computational efficiency.</div></div>
+    <div class="skocard"><div class="sko-i">🤖</div><div class="sko-n">AI / ML Engineering</div><div class="sko-d">Building predictive models, neural networks, and data-driven solutions using modern frameworks.</div></div>
+    <div class="skocard"><div class="sko-i">💻</div><div class="sko-n">Core Software Dev</div><div class="sko-d">Writing robust, maintainable code in Java, Python, and C++ for scalable applications.</div></div>
+    <div class="skocard"><div class="sko-i">📱</div><div class="sko-n">Responsive Design</div><div class="sko-d">Every screen size, every device — seamless and beautiful everywhere, always.</div></div>
+    <div class="skocard"><div class="sko-i">🔧</div><div class="sko-n">Problem Solving</div><div class="sko-d">DSA, debugging, creative engineering — I tackle challenges with curiosity and grit.</div></div>
+    <div class="skocard"><div class="sko-i">🌐</div><div class="sko-n">Full Stack Basics</div><div class="sko-d">Node.js, Express, REST APIs — I can carry ideas from frontend all the way to backend.</div></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     QUOTE
+═══════════════════════════════════════ -->
+<div class="qsec reveal">
+  <p class="qtxt">"I don't just write code — I build intelligent systems that solve real problems."</p>
+  <div class="qby">— Sampurna Sit &nbsp;·&nbsp; Software Developer</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════ -->
+<section class="osec reveal" id="contact-sec" style="text-align:center;">
+  <div class="oslbl">✦ Let's connect</div>
+  <h2 class="ostit">Ready to create<br><em>something amazing?</em></h2>
+  <p style="font-size:.78rem;color:var(--muted);margin-bottom:2rem;max-width:440px;margin-left:auto;margin-right:auto;line-height:1.9;">
+    I'm a fresher actively seeking Software Developer internships. I'm passionate about engineering, algorithms, and AI. Let's build the future together.
+  </p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="mailto:sampurnasit.cse.2@gmail.com" class="btn-p">✉ &nbsp;Get in Touch</a>
+    <a href="tel:7439495015" class="btn-o">📞 &nbsp;+91 7439495015</a>
+    <a href="https://github.com/sampurnasit" target="_blank" rel="noopener" class="btn-o">⬡ &nbsp;GitHub</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <div class="fn">Sampurna Sit</div>
+  <div class="fc">Made by Sampurna</div>
+  <div class="flinks">
+    <a href="https://github.com/sampurnasit" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/sampurna-sit/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="Resume.pdf" target="_blank">Resume</a>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
